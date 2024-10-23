@@ -9,5 +9,13 @@ package Model;
  * @author Student
  */
 public class GestorMantenimiento {
+    private String estado;
+    
+    public String agregar(String estado){
+      
+        return null;  
+        
+    }
+      
     
 }
