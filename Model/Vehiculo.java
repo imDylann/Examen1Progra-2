@@ -8,7 +8,7 @@ package Model;
  *
  * @author Student
  */
-public class Vehiculo {
+public class Vehiculo implements SujetoObserver{
     private String marca;
     private String modelo;
     private String matricula;
@@ -39,6 +39,11 @@ public class Vehiculo {
         this.modelo = modelo;
         this.matricula = matricula;
         this.estado = estado;
+    }
+
+    @Override
+    public void Notify() {
+        
     }
     
     

@@ -80,7 +80,7 @@ public class GUIRegistroVehiculos extends javax.swing.JInternalFrame {
 
         btnGuardar.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnGuardar.setText("Guardar");
-        jPanel1.add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 290, 411, 40));
+        jPanel1.add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 290, 420, 40));
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
