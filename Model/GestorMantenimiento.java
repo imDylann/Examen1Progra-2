@@ -15,16 +15,24 @@ import java.util.Queue;
  */
 public class GestorMantenimiento {
     
-    
-    HashMap <Vehiculo, ServicioMantenimiento> VServicio = new HashMap<Vehiculo, ServicioMantenimiento>();
-    Queue <Vehiculo> vehiculos;
+    public static GestorMantenimiento getInstance(){
+        if(instance==null){
+            instance = new GestorMantenimiento();
+            return instance;
+        }
+        return instance;
+        
+    }
+    static GestorMantenimiento instance;
+    private HashMap <Vehiculo, ServicioMantenimiento> VServicio = new HashMap<Vehiculo, ServicioMantenimiento>();
+    private Queue <Vehiculo> vehiculos;
     
     
     public void agregar(Vehiculo vehiculo){
      this.vehiculos.add(vehiculo);
     }
 
-    private GestorMantenimiento(String estado, Queue<Vehiculo> vehiculos) {
+    private GestorMantenimiento() {
         this.vehiculos = new LinkedList <Vehiculo>();
     }
       
