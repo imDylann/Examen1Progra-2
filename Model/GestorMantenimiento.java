@@ -4,18 +4,32 @@
  */
 package Model;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  *
  * @author Student
  */
 public class GestorMantenimiento {
-    private String estado;
     
-    public String agregar(String estado){
-      
-        return null;  
-        
+    
+    HashMap <Vehiculo, ServicioMantenimiento> VServicio = new HashMap<Vehiculo, ServicioMantenimiento>();
+    Queue <Vehiculo> vehiculos;
+    
+    
+    public void agregar(Vehiculo vehiculo){
+     this.vehiculos.add(vehiculo);
+    }
+
+    private GestorMantenimiento(String estado, Queue<Vehiculo> vehiculos) {
+        this.vehiculos = new LinkedList <Vehiculo>();
     }
       
+    public void modificar(Vehiculo vehiculo, String estado){
+     
+    }
     
 }
